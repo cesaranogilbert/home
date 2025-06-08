@@ -1,0 +1,65 @@
+/* ... (all der bisherige CSS-Code bleibt unverändert) ... */
+
+/* ======================= Footer ======================= */
+.main-footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.social-links {
+    margin-bottom: 1.5rem;
+}
+
+.social-links a {
+    color: var(--white-color);
+    font-size: 1.5rem; /* Grössere Icons */
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+    transform: translateY(-3px); /* Leichter Schwebe-Effekt */
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+}
+
+.main-footer a {
+    color: var(--white-color);
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.main-footer a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* ======================= Responsive Design ======================= */
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    
+    .main-header {
+        position: static;
+    }
+
+    .main-nav { display: none; } /* Simplifizierung für das Beispiel */
+
+    .hero-content, .case-study-content, .about-teaser .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text h2 { text-align: center; }
+
+    .problem-cards, .how-it-works .steps {
+        flex-direction: column;
+    }
+}
