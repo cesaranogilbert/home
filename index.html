@@ -1,159 +1,228 @@
 <!DOCTYPE html>
-<html lang="de-CH">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Gilbert Cesarano | Strategische BI & KI Beratung für Schweizer KMU</title>
-    <meta name="description" content="Gilbert Cesarano, Ihr strategischer Partner für KI-gestützte Business Intelligence in der Schweiz. Ich helfe KMU, durch intelligente Datenstrategien nachhaltig zu wachsen und die Konkurrenz zu überholen.">
-    <meta name="keywords" content="KI Business Intelligence Schweiz, BI Berater KMU Schweiz, Datenstrategie KMU, QLIK Experte Schweiz, Gilbert Cesarano, Datenanalyse Zürich">
-
-    <link rel="stylesheet" href="/home/style.css">
-
+    <title>Cesarano Gilbert | Business Intelligence, Qlik, and AI Strategy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Corporate Tech Blue -->
+    <!-- Application Structure Plan: The website is a strategic conversion funnel. It starts with a powerful Hero section stating the core value proposition and an immediate CTA. This is followed by social proof (logos of companies he's worked with) to build instant credibility. The core expertise is detailed in an interactive "Services" section. A "Thought Leadership" section with blog placeholders establishes him as a subject matter expert. The user journey culminates in a final, benefit-driven CTA section, designed to drive conversions to the Calendly link. -->
+    <!-- Visualization & Content Choices: Instead of charts, the site uses structured, high-impact content. 1. An "As Seen On" logo bar provides immediate social proof. 2. The Services are presented in a clean, tabbed interface (HTML/JS) to detail complex offerings without overwhelming the user. 3. The Thought Leadership section uses article cards (HTML/CSS) to create a visually appealing and organized content hub. These choices prioritize clarity, authority, and user action over decorative visuals. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #F8F9FA; /* Off-white */
+            color: #212529; /* Dark Gray */
+        }
+        .font-heading {
+            font-family: 'Roboto', sans-serif;
+        }
+        .accent-blue {
+            color: #007BFF;
+        }
+        .bg-accent-blue {
+            background-color: #007BFF;
+        }
+        .border-accent-blue {
+            border-color: #007BFF;
+        }
+        .hero-bg {
+            background-color: #FFFFFF;
+        }
+        .tab-btn.active {
+            border-bottom-color: #007BFF;
+            color: #007BFF;
+            font-weight: 600;
+        }
+    </style>
 </head>
-<body>
+<body class="antialiased">
 
-    <header class="main-header">
-        <div class="container">
-            <a href="/home/" class="logo">Gilbert Cesarano</a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#services">Strategische Beratung</a></li>
-                    <li><a href="#cases">Erfolgsgeschichten</a></li>
-                    <li><a href="#about">Über Mich</a></li>
-                    <li><a href="#contact" class="nav-cta">Kontakt</a></li>
-                </ul>
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-heading text-gray-800">Cesarano Gilbert</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#services" class="text-gray-600 hover:accent-blue transition-colors">Services</a>
+                <a href="#articles" class="text-gray-600 hover:accent-blue transition-colors">Insights</a>
+                <a href="#about" class="text-gray-600 hover:accent-blue transition-colors">About</a>
             </nav>
+            <a href="https://calendly.com/cesaranogilbert" target="_blank" rel="noopener noreferrer" class="hidden md:inline-block bg-accent-blue text-white font-bold px-5 py-2 rounded-md hover:bg-blue-600 transition-colors">Book a Free Call</a>
         </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container hero-content">
-                <div class="hero-text">
-                    <h1>Daten sind das neue Gold. Ich bin Ihr Kompass.</h1>
-                    <p class="subtitle">Als strategischer Partner für KI-gestützte Business Intelligence helfe ich ambitionierten Schweizer KMU, komplexe Daten in klare, gewinnbringende Entscheidungen zu verwandeln.</p>
-                    <a href="#contact" class="cta-button">Kostenloses Strategiegespräch vereinbaren</a>
-                </div>
-                <div class="hero-image">
-                    <img src="/home/images/gilbert-hero.jpg" alt="Portrait von Gilbert Cesarano, Datenstratege und BI Berater für KMU in der Schweiz">
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg pt-32 pb-20 md:pt-48 md:pb-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-heading text-gray-900 leading-tight">I Turn Complex Data Into Your<br class="hidden md:block"> <span class="accent-blue">Competitive Advantage.</span></h1>
+                <p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-gray-600">As a Data Executive and Senior BI Consultant, I architect and execute data strategies that drive profitability, efficiency, and growth through Business Intelligence, Qlik, and AI-powered automation.</p>
+                <div class="mt-10">
+                    <a href="https://calendly.com/cesaranogilbert" target="_blank" rel="noopener noreferrer" class="bg-accent-blue text-white font-bold px-10 py-4 rounded-md hover:bg-blue-600 transition-colors text-lg shadow-lg">Schedule Your Free Strategy Call</a>
                 </div>
             </div>
         </section>
 
-        <section class="social-proof">
-            <div class="container">
-                <p>AUSGEWÄHLTE EXPERTISE & TECHNOLOGIEN</p>
-                <div class="logos">
-                    <img src="https://via.placeholder.com/150x40.png?text=QLIK" alt="QLIK Expertise">
-                    <img src="https://via.placeholder.com/150x40.png?text=AI+Analytics" alt="AI Analytics">
-                    <img src="https://via.placeholder.com/150x40.png?text=Data+Strategy" alt="Data Strategy">
-                    <img src="https://via.placeholder.com/150x40.png?text=IT+Architecture" alt="IT Architecture">
+        <!-- Social Proof Section -->
+        <div class="py-12 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <p class="text-center text-gray-500 font-semibold uppercase tracking-wider">Trusted by & Experienced with Global Industry Leaders</p>
+                <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+                    <div class="flex justify-center"><p class="text-3xl font-bold text-gray-400">E2OPEN</p></div>
+                    <div class="flex justify-center"><p class="text-3xl font-bold text-gray-400">HICO Group AG</p></div>
+                    <div class="flex justify-center"><p class="text-3xl font-bold text-gray-400">SIEMENS</p></div>
+                    <div class="flex justify-center"><p class="text-3xl font-bold text-gray-400">SULZER</p></div>
+                    <div class="flex justify-center"><p class="text-3xl font-bold text-gray-400">QLIK</p></div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section id="problem" class="problem-solution">
-            <div class="container">
-                <h2>Kommt Ihnen das bekannt vor?</h2>
-                <div class="problem-cards">
-                    <div class="card">
-                        <h3>Verlorene Potenziale</h3>
-                        <p>Ihre Geschäftsdaten sind ein ungenutzter Schatz. Sie ahnen, dass mehr möglich wäre, wissen aber nicht, wo Sie anfangen sollen.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Fehlende Klarheit</h3>
-                        <p>Komplexe Excel-Reports und undurchsichtige Zahlenkolonnen kosten Zeit und führen zu Entscheidungen aus dem Bauch heraus.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Technologie-Unsicherheit</h3>
-                        <p>Sie fürchten, dass moderne Datenlösungen zu teuer, zu kompliziert und nur für Grosskonzerne umsetzbar sind.</p>
-                    </div>
+        <!-- Services Section -->
+        <section id="services" class="py-20 md:py-28">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-heading text-gray-900">How I Drive Growth</h2>
+                    <p class="mt-4 text-lg text-gray-600">I deliver end-to-end IT solutions that transform how your business operates with data and its quality, how it makes reliable data-driven decisions, and how it innovates together with all the modern technologies and possibilities (AI & Automation).</p>
                 </div>
-                <p class="solution-statement">Ich schaffe Klarheit und baue die Brücke zwischen Ihren Daten und Ihrem Geschäftserfolg.</p>
-            </div>
-        </section>
-        
-        <section id="services" class="how-it-works">
-            <div class="container">
-                <h2>Mein Ansatz: Partnerschaftlich. Strategisch. Umsetzbar.</h2>
-                <div class="steps">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <h3>Zuhören & Verstehen</h3>
-                        <p>Im ersten Gespräch analysieren wir Ihre Ziele und identifizieren gemeinsam das grösste Potenzial in Ihren Daten.</p>
+                <div class="mt-12 max-w-5xl mx-auto">
+                    <div class="flex justify-center border-b border-gray-200">
+                        <button data-tab="bi" class="tab-btn active w-1/3 py-4 text-lg border-b-2">Business Intelligence</button>
+                        <button data-tab="qlik" class="tab-btn w-1/3 py-4 text-lg text-gray-500 border-b-2 border-transparent">Qlik Expertise</button>
+                        <button data-tab="ai" class="tab-btn w-1/3 py-4 text-lg text-gray-500 border-b-2 border-transparent">Automation & AI</button>
                     </div>
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <h3>Strategie & Fahrplan</h3>
-                        <p>Ich entwickle eine massgeschneiderte Datenstrategie und einen klaren, schrittweisen Fahrplan zur Umsetzung.</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <h3>Umsetzung & Wertschöpfung</h3>
-                        <p>Ich begleite Sie bei der Implementierung, sorge für messbare Ergebnisse und befähige Ihr Team für die Zukunft.</p>
+                    <div id="service-content" class="mt-8">
+                        <!-- Content will be injected by JS -->
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="cases" class="case-study-teaser">
-            <div class="container">
-                <div class="case-study-content">
-                    <div class="case-study-image">
-                        <img src="https://via.placeholder.com/500x350.png?text=MedTech+Erfolgs-Dashboard" alt="Dashboard für ein Schweizer MedTech KMU">
-                    </div>
-                    <div class="case-study-text">
-                        <span>Erfolgsgeschichte: Schweizer MedTech KMU</span>
-                        <h3>Produktionsausschuss um 18% reduziert</h3>
-                        <p>Ein führender Hersteller von Präzisionsteilen kämpfte mit Qualitätsschwankungen. Durch die Implementierung eines KI-gestützten Dashboards zur Prozessüberwachung in Echtzeit konnten wir Muster erkennen, die Fehlerursachen identifizieren und den Ausschuss nachhaltig senken. Der ROI wurde in weniger als 12 Monaten erreicht.</p>
-                        <a href="#" class="secondary-button">Weitere Erfolgsgeschichten ansehen</a>
-                    </div>
+        <!-- Articles Section -->
+        <section id="articles" class="py-20 md:py-28 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-heading text-gray-900">Actionable Insights & Thought Leadership</h2>
+                    <p class="mt-4 text-lg text-gray-600">Exploring the forefront of data strategy, analytics, and artificial intelligence.</p>
                 </div>
-            </div>
-        </section>
-        
-        <section id="about" class="about-teaser">
-            <div class="container">
-                 <div class="about-image">
-                    <img src="/home/images/gilbert-about.jpg" alt="Gilbert Cesarano bei einem strategischen Workshop">
-                </div>
-                <div class="about-text">
-                    <h2>Der Stratege mit dem Blick fürs Ganze</h2>
-                    <p>Seit über einem Jahrzehnt bewege ich mich an der Schnittstelle von Daten, Technologie und Management. Meine wahre Leidenschaft liegt darin, das Potenzial zu entfalten – nicht nur in Daten, sondern auch in den Menschen, die damit arbeiten. Mein Hintergrund als analytischer Denker, geprägt von strategischen Disziplinen wie Poker, hat mich gelehrt, Muster zu erkennen und kalkulierte Entscheidungen zu treffen.</p>
-                    <p>Meine Werte sind einfach und nicht verhandelbar: Respekt, Ehrlichkeit und das feste Bekenntnis, für beide Seiten eine Win-Win-Situation zu schaffen. Ich bin Ihr direkter Ansprechpartner, von der Strategie bis zum erfolgreichen Abschluss.</p>
-                    <a href="#" class="secondary-button">Meine Geschichte & Werte entdecken</a>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md border">
+                        <p class="text-sm font-semibold accent-blue">DATA STRATEGY</p>
+                        <h3 class="mt-2 text-xl font-heading">10 Game-Changing Benefits of Predictive Analytics</h3>
+                        <p class="mt-2 text-gray-600">10 ways predictive analytics is revolutionizing these professions. Unlock the full potential of your environment by mastering data handling, data modeling, data governance, and performance optimization.</p>
+                        <a href="https://gilbertcesarano.blogspot.com/2024/12/10-game-changing-benefits-of-predictive.html" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block font-semibold text-gray-800 hover:accent-blue">Read More &rarr;</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md border">
+                        <p class="text-sm font-semibold accent-blue">BUSINESS DEVELOPMENT</p>
+                        <h3 class="mt-2 text-xl font-heading">Benefits of Combining SAP, Qlik, and R</h3>
+                        <p class="mt-2 text-gray-600">How integrating data from all business units leads to superior decision-making, efficiency gains, and a significant competitive edge.</p>
+                        <a href="https://gilbertcesarano.blogspot.com/2024/12/the-benefits-of-combining-sap-qlik-and.html" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block font-semibold text-gray-800 hover:accent-blue">Read More &rarr;</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md border">
+                        <p class="text-sm font-semibold accent-blue">AI & AUTOMATION</p>
+                        <h3 class="mt-2 text-xl font-heading">Machine Learning with Qlik AutoML: Simplifying Advanced Analytics</h3>
+                        <p class="mt-2 text-gray-600">Move beyond traditional reporting. Explore how machine learning and AI can be integrated into your BI framework for predictive insights.</p>
+                        <a href="https://gilbertcesarano.blogspot.com/2024/12/machine-learning-with-qlik-automl.html" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block font-semibold text-gray-800 hover:accent-blue">Read More &rarr;</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md border">
+                        <p class="text-sm font-semibold accent-blue">SUCCESS STORIES</p>
+                        <h3 class="mt-2 text-xl font-heading">Case Studies of Successful Data Implementations</h3>
+                        <p class="mt-2 text-gray-600">In world of modern business, data analytics has emerged as a powerful tool for driving efficiency, innovation, and growth. This article will highlight real-world examples of companies that have successfully harnessed data to transform their operations and achieve remarkable outcomes.</p>
+                        <a href="https://gilbertcesarano.blogspot.com/2024/08/case-studies-of-successful-data.html" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block font-semibold text-gray-800 hover:accent-blue">Read More &rarr;</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="final-cta">
-            <div class="container">
-                <h2>Sind Sie bereit für die nächste Stufe?</h2>
-                <p>Lassen Sie uns in einem unverbindlichen Gespräch herausfinden, wie Ihr Unternehmen mit einer intelligenten Datenstrategie fundierter, schneller und profitabler werden kann.</p>
-                <a href="mailto:ihre.email@domain.ch" class="cta-button">Gesprächstermin anfragen</a>
+        <!-- About Section -->
+        <section id="about" class="py-20 md:py-28">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/3 text-center md:text-left">
+                    <img src="images/gilbert-hero.jpg" alt="Cesarano Gilbert" class="w-64 h-64 rounded-full mx-auto shadow-2xl">
+                </div>
+                <div class="w-full md:w-2/3">
+                    <h2 class="text-3xl md:text-4xl font-heading text-gray-900">A Relentless Explorer of Data-Driven Value</h2>
+                    <p class="mt-4 text-lg text-gray-600">Born in Germany, raised in Italy, and now based in Switzerland, my multicultural background provides a unique lens on global business challenges. With a decade of experience spanning roles from Director of Analytics to Senior BI Consultant and AI Advocate, I possess a rare end-to-end understanding of the data lifecycle.</p>
+                    <p class="mt-4 text-lg text-gray-600">My passion is to be an "action-taker"—to simplify complex problems and architect robust, scalable data solutions that deliver measurable ROI. Having someone who understands the full picture, from technical architecture to business strategy, is the invaluable asset I bring to every project.</p>
+                </div>
             </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section id="contact" class="py-20 md:py-28 bg-gray-800 text-white">
+             <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-heading">Ready to Unlock the True Potential of Your Data?</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-300">A single conversation can be the catalyst for transformation. Let's spend 30 minutes discussing your current data challenges and outlining a high-level strategy for turning them into your greatest asset. This is a no-obligation, value-first strategic call.</p>
+                <div class="mt-10">
+                    <a href="https://calendly.com/cesaranogilbert" target="_blank" rel="noopener noreferrer" class="bg-accent-blue text-white font-bold px-10 py-4 rounded-md hover:bg-blue-600 transition-colors text-lg shadow-lg">Book Your Free Strategy Call</a>
+                </div>
+             </div>
         </section>
     </main>
-
-    <footer class="main-footer">
-        <div class="container">
-            <div class="social-links">
-                <a href="https://ch.linkedin.com/in/gilbertcesarano" target="_blank" aria-label="LinkedIn Profil"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.youtube.com/@Gilbert.Cesarano" target="_blank" aria-label="YouTube Kanal"><i class="fab fa-youtube"></i></a>
-                <a href="https://beacons.ai/gilbert.cesarano" target="_blank" aria-label="Beacons Profil"><i class="fa fa-lightbulb"></i></a>
-            </div>
-            <div class="footer-content">
-                <p>© 2025 Gilbert Cesarano | Datenstrategie & Business Intelligence</p>
-                <p><a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
-            </div>
+    
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-center">
+            <p class="text-gray-400">&copy; 2025 Cesarano Gilbert. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4 md:mt-0">
+                <a href="https://www.gilbertcesarano.com/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">Website</a>
+                <a href="https://www.linkedin.com/in/gilbertcesarano" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
+                <a href="https://www.youtube.com/@GilbertCesarano" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">YouTube</a>
+                <a href="https://linktr.ee/gilbertcesarano" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">Linktree</a>       
+             </div>
         </div>
     </footer>
 
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const serviceData = {
+            bi: {
+                title: 'End-to-End Business Intelligence Strategy',
+                description: 'I design and implement comprehensive BI ecosystems. From data modeling and warehousing to creating insightful executive dashboards and financial reports, I build the data-driven foundation your business needs to make smarter, faster decisions. My approach focuses on creating a single source of truth that aligns all departments.',
+                icon: '📊'
+            },
+            qlik: {
+                title: 'Qlik Center of Excellence & Consulting',
+                description: "As a Qlik expert, I provide specialized consulting to maximize your investment. This includes performance optimization, building powerful applications using Qlik's associative model, establishing robust data governance, and training your teams to become self-sufficient data explorers. I turn your Qlik platform into a high-performance analytics engine.",
+                icon: '🚀'
+            },
+            ai: {
+                title: 'AI & Automation Integration',
+                description: "Go beyond historical reporting. I help you leverage AI and automation to create predictive models, streamline data pipelines (ETL/ELT), and unlock next-level insights. From identifying patterns with machine learning to automating workflows, I help future-proof your data strategy for the age of AI.",
+                icon: '🤖'
+            }
+        };
+
+        const serviceContentDiv = document.getElementById('service-content');
+        const tabButtons = document.querySelectorAll('.tab-btn');
+
+        function updateServiceContent(tab) {
+            const data = serviceData[tab];
+            serviceContentDiv.innerHTML = `
+                <div class="bg-white p-8 md:p-12 rounded-lg shadow-lg border">
+                     <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="text-6xl">${data.icon}</div>
+                        <div class="text-center md:text-left">
+                            <h3 class="text-2xl font-heading text-gray-900">${data.title}</h3>
+                            <p class="mt-2 text-lg text-gray-600">${data.description}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                updateServiceContent(button.dataset.tab);
+            });
+        });
+
+        // Initial load
+        updateServiceContent('bi');
+    });
+    </script>
 </body>
 </html>
