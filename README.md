@@ -1,2 +1,2 @@
 # home
-Webseite für Gilbert Cesarano, Datenstratege &amp; Qlik Experte
+Webseite für G. C., Datenstratege &amp; Qlik Experte
